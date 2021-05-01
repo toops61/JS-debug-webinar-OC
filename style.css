@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    font-size: 20px;
 }
 
 nav #menu{
@@ -10,7 +11,7 @@ nav #menu{
     padding: 5px;
 }
 
-nav #menu .nav-item :hover{
+nav #menu .nav-item:hover{
     background-color: rgba(255,255,255,0.1);
 }
 
@@ -19,7 +20,43 @@ nav #menu .nav-item{
 } 
 
 nav #menu .nav-item a{
-    color: wihte;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.2em;
+}
+
+nav #menu .nav-item .logo{
+    width: 25px;
+}
+
+.block{
+    padding: 5% 10% 5% 10%;
+    font-size: 1.1em;
+}
+
+.block-light{
+    background-color: white;
+    color: #303030;
+}
+
+.block-dark{
+    background: linear-gradient(#d32f2f, #e44F4F);
+    color: white;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#presentation .logo{
+    width: 30%;
+}
+
+#presentation .content{
+    width: 60%;
+}
+
+#presentation .content .title{
+
 }
