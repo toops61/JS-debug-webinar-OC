@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+}
+
+nav #menu{
+    display:flex;
+    list-style-type: none;
+    background-color: rgba(48,48,48,1);
+    margin: 0px;
+    padding: 5px;
+}
+
+nav #menu .nav-item :hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+nav #menu .nav-item{
+    padding: 15px;
+} 
+
+nav #menu .nav-item a{
+    color: wihte;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
