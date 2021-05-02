@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-size: 20px;
+    text-align: justify;
 }
 
 nav #menu{
@@ -9,6 +10,8 @@ nav #menu{
     background-color: rgba(48,48,48,1);
     margin: 0px;
     padding: 5px;
+    position: fixed;
+    width: 100%;;
 }
 
 nav #menu .nav-item:hover{
@@ -57,6 +60,106 @@ nav #menu .nav-item .logo{
     width: 60%;
 }
 
-#presentation .content .title{
+#listProduct{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.product{
+    width: 30%;
+    margin-bottom: 25px;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product-body{
+    background-color: white;
+    padding: 15px;
+}
+
+.product-body .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.product .card{
+    display: flex;
+    flex-direction: column;
+    color: rgba(48,48,48,1);
+    text-decoration: none;
+}
+
+.product-body .title{
+    font-weight: 600;
+}
+
+.product-body .content{
+    width:80%;
+}
+
+.product-body .details{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-body .content .category{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.product-body .content .description{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+}
+
+.product-body .details .price{
+    font-size: 1.5em;
+    width: 20%;
+    display:flex;
+    align-self: flex-end;
+}
+
+.product-body .details .price span{
+    text-align: right;
+    width:100%;
+}
+
+.product .card .addProduct{
+    padding: 15px;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.product:hover .product-body{
+    transition: background-color 0.4s, color 0.4s;
+    background-color: #007bff;
+    color: #FFFFFF;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0, 0.7);
+    transition: box-shadow 0.4s;
+}
+
+
+
+@media screen and(max-width: 1220px){
+    #presentation .logo{
+        width: 100%;
+    }
+    
+    #presentation .content{
+        width: 100%;
+    }
 }
