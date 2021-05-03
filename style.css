@@ -2,16 +2,27 @@ body{
     margin: 0px;
     font-size: 20px;
     text-align: justify;
+    font-family: Roboto;
+    background-color: rgba(64,64,64,1);
+}
+
+h2{
+    text-align: center;
 }
 
 nav #menu{
     display:flex;
     list-style-type: none;
-    background-color: rgba(48,48,48,1);
+    background-color: rgba(30,30,30,0.8);
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
     position: fixed;
-    width: 100%;;
+    width: 100%;
+    top: 0px;
+}
+
+main{
+    margin-top:60px;
 }
 
 nav #menu .nav-item:hover{
@@ -38,8 +49,8 @@ nav #menu .nav-item .logo{
 }
 
 .block-light{
-    background-color: white;
-    color: #303030;
+    background-color: rgba(64,64,64,1);
+    color: white;
 }
 
 .block-dark{
@@ -63,17 +74,19 @@ nav #menu .nav-item .logo{
 #listProduct{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product{
     width: 30%;
     margin-bottom: 25px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .product img{
     width: 100%;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .product-body{
@@ -95,6 +108,11 @@ nav #menu .nav-item .logo{
 
 .product-body .title{
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .product-body .content{
@@ -152,9 +170,67 @@ nav #menu .nav-item .logo{
     transition: box-shadow 0.4s;
 }
 
+.form-field{
+    display:flex;
+    padding: 12px;
+    border: 1px solid rgba(48,48,48,0.3);
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+    background-color: #F0F0F0;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
 
+.form-group{
+    width: 100%;
+}
+.form-field:focus{
+    background-color: #FFFFFF;
+}
 
-@media screen and(max-width: 1220px){
+#contact .sendContact{
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer{
+    display:flex;
+    list-style-type: none;
+    background-color: rgba(30,30,30,0.8);
+    justify-content: space-around;
+    color: white;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer li{
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: #D0D0D0;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 980px){
+    #presentation{
+        flex-direction: column;
+    }
     #presentation .logo{
         width: 100%;
     }
@@ -162,4 +238,12 @@ nav #menu .nav-item .logo{
     #presentation .content{
         width: 100%;
     }
+    #listProduct{
+        flex-direction: column;
+    }
+
+    .product{
+        width: 100%;
+    }
 }
+
