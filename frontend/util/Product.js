@@ -15,7 +15,7 @@ class Product{
                                     <span class="description">${this.description}</span>
                                 </div>
                                 <div class="price">
-                                    <span>${this.price/100} €</span>
+                                    <span>${this.price} €</span>
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ async function get(url) {
             }
         }
 
-        request.open("GET",config.host + url);
+        request.open("GET",config.hot + url);
 
         request.send();
     });
