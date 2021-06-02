@@ -20,10 +20,10 @@ exports.getAll = (req, res, next) => {
 exports.getById = (req, res, next) => {
     Product.findById(req.params.id).then(
     (product) => {
-      if (!product) {
+      if (!products) {
         return res.status(404).send(new Error('Product not found!'));
       }
-      product.imageUrl = req.protocol + '://' + req.get('host') + '/images/product/' + product.imageUrl;
+      product.imageUrl = req.protocol + '://' + req.get('host') + '/images/' + product.imageUrl;
       res.status(200).json(product);
     }
   ).catch(
