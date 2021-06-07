@@ -20,7 +20,7 @@ const products = [
         "name": "Peluche ourson blessé",
         "category": "Jouets en bois",
         "price": 1200,
-        "description": `Ours en peluche blessé idéal des le plus jeune âge. Cette peluche sera donné à l'enfant tout le réconfort dont il a besoin.`,
+        "description": `Ours en peluche blessé idéal des le plus jeune âge. Cette peluche saura donner à l'enfant tout le réconfort dont il a besoin.`,
         "imageUrl": "3.png"
     },
     {
