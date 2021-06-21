@@ -1,0 +1,19 @@
+{
+  "name": "webinar-devweb-outils-debug",
+  "version": "1.0.0",
+  "description": "exercice debug JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenClassrooms-Student-Center/Webinar-DevWeb-outils-debug.git"
+  },
+  "author": "Toops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenClassrooms-Student-Center/Webinar-DevWeb-outils-debug/issues"
+  },
+  "homepage": "https://github.com/OpenClassrooms-Student-Center/Webinar-DevWeb-outils-debug#readme"
+}
